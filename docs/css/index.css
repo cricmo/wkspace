@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* footer  */
+.con{width: 500px;height: 400px;margin: 0 auto;}
+.con div{width: 50%;height: 100%;}
+.a{float: left;color: teal;}
