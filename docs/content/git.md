@@ -19,12 +19,12 @@
  2. 查看本地状态:
 - >git status
 
-3. 输入完命令后选取修改文件添加，如果要添加所有修改文件用“git add * *”
-- >git add 
+3. 输入完命令后选取修改文件添加，如果要添加所有修改文件用“git add * ”
+- >git add .
 - >git add * （所有文件提交）
 
 4. 提交add选取的文档
-- >git commit
+- >git commit -m "提交的描述信息"
 
 5. 把文件push到服务器
 - >git push origin HEAD:refs/for/master 
