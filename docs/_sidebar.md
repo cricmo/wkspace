@@ -14,4 +14,5 @@
     * [11、shell相关](content/shell)
     * [12、go相关](content/go)
     * [13、flutter相关](content/flutter)
-    * [14、其它相关](content/other)
+    * [14、appium 测试报告](content/result)
+    * [其它相关](content/other)

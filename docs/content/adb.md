@@ -1,3 +1,9 @@
+- **安装app**
+   > adb install apkName
+
+   > adb install -r apkName
+- **卸载app**
+   > adb uninstall apk包名(com.zhihu.android)
 - **参数d直接进入当前USB连接的设备的shell环境**
    > adb -d shell
 - **参数e 进入当前模拟器设备的shell环境：**
