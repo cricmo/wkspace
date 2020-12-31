@@ -250,25 +250,6 @@
     6 复用性
         1 主要用例可以复用，减少维护成本
 
-**连表查询**
-
-    1 外连接：
-        1 左连接 left join / left outer jion   [左外连接包含left join左表所有行，如果左表中某行在右表没有匹配，则结果中对应行右表的部分全部为空(NULL).]
-            select * from ta1 left join ta2 on ta1.id = ta2.id
-        2 右连接 right join / right outer join
-            select * from ta1 right joi ta2 on ta1.id = ta2.id
-        3 完全外连接 full join / full outher join   [完全外连接包含full join左右两表中所有的行，如果右表中某行在左表中没有匹配，则结果中对应行右表的部分全部为空(NULL)，如果左表中某行在右表中没有匹配，则结果中对应行左表的部分全部为空(NULL)。]
-            select * from ta1 full join ta2 on ta1.id =ta2.id
-    2 内连接 join / inner join
-        select * from ta1 inner join ta2 on ta1.id=ta2.id
-            相当于：
-        select * from ta1,ta2 where ta1.ID=ta2.ID
-    
-    3 交叉连接 ：cross join
-        select * from ta1 cross join ta2  [没有 WHERE 子句的交叉联接将产生连接所涉及的表的笛卡尔积。第一个表的行数乘以第二个表的行数等于笛卡尔积结果集的大小。]
-
-    4 
-
 **http请求头包含得内容（请求行、请求头、请求体）**
 
     1 请求报文(请求行/请求头/请求数据/空行)
