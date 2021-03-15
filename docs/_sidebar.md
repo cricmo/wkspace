@@ -15,5 +15,6 @@
     * [11、flutter相关](content/flutter)
     * [12、appium 测试报告](content/result)
     * [13、sql相关](content/sql)
+    * [14、APP专项测试](content/APPZX)
     * [面试相关](content/ms)
     * [其它相关](content/other)
