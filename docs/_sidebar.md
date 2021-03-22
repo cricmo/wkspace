@@ -16,5 +16,6 @@
     * [12、appium 测试报告](content/result)
     * [13、sql相关](content/sql)
     * [14、APP专项测试](content/APPZX)
+    * [15、sql语句优化相关](content/sqlYH)
     * [面试相关](content/ms)
     * [其它相关](content/other)
