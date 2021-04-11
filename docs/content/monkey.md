@@ -156,5 +156,123 @@
     11：其他事件百分比，参数--pct-anyevent
 
 
+***monkey 特定场景脚本及运行***
 
-   
+    《《脚本.script》》
+
+    #头部信息
+    type = raw events
+    count = 1
+    speed = 1.0
+
+    #启动测试
+    start data >>
+
+    LaunchActivity(com.tencent.mobileqq,com.tencent.mobileqq.activity.SplashActivity)
+    UserWait(2000)
+
+    Tap(170,1170,1000)#点击引导页登录按钮
+    UserWait(2000)
+
+    Tap(100,300,1000)#点击用户名框（QQ这里要点一下用户名框，然后布局会发生变化）
+    UserWait(2000)
+
+    Tap(50,250,1000)#点击用户名框
+    DispatchString(123456789)#输入QQ号
+    UserWait(2000)
+
+    Tap(50,310,1000)#点击密码框
+    DispatchString(123456789)#输入qq密码
+    UserWait(2000)
+
+    Tap(325,400,1000)#点击登录按钮
+
+    《《运行》》
+    1. adb push <脚本位置> /sdcard/
+    2. adb shell monkey -f /sdcard/脚本名称 -v 1
+脚本相关》》
+
+https://www.cnblogs.com/niunai/p/10397330.html
+
+https://blog.csdn.net/daihuimaozideren/article/details/77489640
+
+https://jingyan.baidu.com/article/90bc8fc847c4b7f652640c5c.html
+
+
+
+**Android KeyCode列表**
+
+更多查看：
+https://blog.csdn.net/feizhixuan46789/article/details/16801429
+
+1、电话键
+
+    KEYCODE_CALL	拨号键	5
+
+    KEYCODE_ENDCALL	挂机键	6
+
+    KEYCODE_HOME	按键Home	3
+
+    KEYCODE_MENU	菜单键	82
+
+    KEYCODE_BACK	返回键	4
+
+    KEYCODE_SEARCH	搜索键	84
+
+    KEYCODE_CAMERA	拍照键	27
+
+    KEYCODE_FOCUS	拍照对焦键	80
+
+    KEYCODE_POWER	电源键	26
+
+    KEYCODE_NOTIFICATION	通知键	83
+
+    KEYCODE_MUTE	话筒静音键	91
+
+    KEYCODE_VOLUME_MUTE	扬声器静音键	164
+
+    KEYCODE_VOLUME_UP	音量增加键	24
+
+    KEYCODE_VOLUME_DOWN	音量减小键	25
+
+2、控制键
+
+    KEYCODE_ENTER	回车键	66
+    KEYCODE_ESCAPE	ESC键	111
+    KEYCODE_DPAD_CENTER	导航键 确定键	23
+    KEYCODE_DPAD_UP	导航键 向上	19
+    KEYCODE_DPAD_DOWN	导航键 向下	20
+    KEYCODE_DPAD_LEFT	导航键 向左	21
+    KEYCODE_DPAD_RIGHT	导航键 向右	22
+    KEYCODE_MOVE_HOME	光标移动到开始键	122
+    KEYCODE_MOVE_END	光标移动到末尾键	123
+    KEYCODE_PAGE_UP	向上翻页键	92
+    KEYCODE_PAGE_DOWN	向下翻页键	93
+    KEYCODE_DEL	退格键	67
+    KEYCODE_FORWARD_DEL	删除键	112
+    KEYCODE_INSERT	插入键	124
+    KEYCODE_TAB	Tab键	61
+    KEYCODE_NUM_LOCK	小键盘锁	143
+    KEYCODE_CAPS_LOCK	大写锁定键	115
+    KEYCODE_BREAK	Break/Pause键	121
+    KEYCODE_SCROLL_LOCK	滚动锁定键	116
+    KEYCODE_ZOOM_IN	放大键	168
+    KEYCODE_ZOOM_OUT	缩小键	169
+
+3、基本
+
+    KEYCODE_0	按键'0'	7
+    KEYCODE_1	按键'1'	8
+    KEYCODE_2	按键'2'	9
+    KEYCODE_3	按键'3'	10
+    KEYCODE_4	按键'4'	11
+    KEYCODE_5	按键'5'	12
+    KEYCODE_6	按键'6'	13
+    KEYCODE_7	按键'7'	14
+    KEYCODE_8	按键'8'	15
+    KEYCODE_9	按键'9'	16
+    
+
+
+
+
