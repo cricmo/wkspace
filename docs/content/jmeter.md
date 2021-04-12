@@ -3,6 +3,15 @@
 2. 正则表达式在线测试工具: http://tool.oschina.net/regex/
 3. 
 
+### 测试结果分析：聚合报告\ 性能指标监控收集插件###
+
+    业务成功率 100%
+    并发测试数量  100
+    响应时间  <=5s
+    内存使用率  <=80%
+    cpu使用率 <=80%
+
+
 https://www.cnblogs.com/imyalost/p/7062784.html
 
 ### 拉勾app

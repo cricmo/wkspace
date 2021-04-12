@@ -26,6 +26,12 @@
 - **显示设备的详细信息**
     > adb devices -l
 
+- **查看设备中的包 data/data** 
+   > adb shell dumpsys activity | grep mFocusedActivity
+
+- **查看apk包名**
+   > aapt d badging apkName
+
 - **查看手机所有的安装包**
    > adb shell pm list packages
 

@@ -72,10 +72,12 @@
 
 **#monkeyrunner单击控件**
 
-    方式1：device.touch(507,72,"DOWN_AND_UP")
+    方式1：
+    device.touch(507,72,"DOWN_AND_UP")
 
 
-    方式2：easy_device.touch(By.id('id/qingchu'),device.DOWN_AND_UP)
+    方式2：
+    easy_device.touch(By.id('id/qingchu'),device.DOWN_AND_UP)
 
     用后者需要导入
 
@@ -114,10 +116,8 @@
 **#monkeyrunner滑动屏幕**
 
     for i in range(1,70):
-
-    device.drag((250,110),(250,850),0.1,10)
-
-    MonkeyRunner.sleep(1)
+        device.drag((250,110),(250,850),0.1,10)
+        MonkeyRunner.sleep(1)
 
 
 **#monkeyrunner延时**
