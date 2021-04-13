@@ -18,5 +18,6 @@
     * [14、APP专项测试](content/APPZX)
     * [15、sql语句优化相关](content/sqlYH)
     * [16、MonkeyRunner](content/monkeyRunner)
+    * [17、python相关](/content/python)
     * [面试相关](content/ms)
     * [其它相关](content/other)
