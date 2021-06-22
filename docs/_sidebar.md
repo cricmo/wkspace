@@ -6,7 +6,7 @@
     * [3、monkey随机测试](content/monkey)
     * [4、adb相关](content/adb)
     * [5、jmeter相关](content/jmeter)
-    * [6、mysql+navicat相关](content/mysql)
+    * <!-- * [6、mysql+navicat相关](content/mysql)-->
     * [7、git相关](content/git)
     <!-- * [8、Hugo+GitHub Pages搭建(Mac环境)](content/Hugo+GitHub) -->
     * [8、gitbook+gitHub ](content/gitbook)
@@ -18,6 +18,8 @@
     * [14、APP专项测试](content/APPZX)
     * [15、sql语句优化相关](content/sqlYH)
     * [16、MonkeyRunner](content/monkeyRunner)
-    * [17、python相关](/content/python)
-    * [面试相关](content/ms)
+    * [17、python相关](content/python)
+    * [18、工作之外](content/tiwai)
+    *  [面试相关](content/ms)
     * [其它相关](content/other)
+

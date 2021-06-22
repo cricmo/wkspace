@@ -14,7 +14,7 @@
     
     3 交叉连接 ：cross join
         select * from ta1 cross join ta2  [没有 WHERE 子句的交叉联接将产生连接所涉及的表的笛卡尔积。第一个表的行数乘以第二个表的行数等于笛卡尔积结果集的大小。]
-
+    
     4 合并查询结果
         select id from stu UNION select stu_id from score
 
@@ -25,13 +25,13 @@
     
     2  删除记录
         delete from 表名 where 条件
-
+    
     3 插入记录
         insert into 表名 values();
     
     4 删除整个表
         drop table 表名
-
+    
     5 创建表
         create table 表名(列名1 类型 约束，。。。)；
     
@@ -48,7 +48,7 @@
 
     1 查询表中有多少数据
         select count(code) frome tabName; 
-
+    
     2 查询最大值
         select max(code) from tabName;
     
@@ -79,6 +79,23 @@
 
     1 函数有返回值，存储过程没有
     2 函数可以在select语句中使用，存储过程不能
+
+
+
+**随机查询&排除中文：**
+
+> 1. 随机查询一条数据：
+>    1. *SELECT* * FROM tableName *ORDER* *BY*  RAND() limit 1 
+>    2. select * 
+> 2. SELECT * FROM tableName ORDER BY RAND() LIMIT 100
+> 3. 排除中文：SELECT * FROM tableName WHERE memberAccount REGEXP '^[1-9A-Za-z]' ORDER BY RAND() LIMIT 100
+> 4. 只选择中文：SELECT memberAccount FROM uic_member_login_account WHERE NOT memberAccount REGEXP '^[1-9A-Za-z]' ORDER BY RAND() LIMIT 100
+>
+> https://blog.csdn.net/weixin_30316097/article/details/97576927
+>
+> https://blog.csdn.net/weixin_32484447/article/details/113317286?utm_term=mysql查询过滤中文&utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~sobaiduweb~default-1-113317286&spm=3001.4430
+>
+> 
 
 https://zhuanlan.zhihu.com/p/91749976
 

@@ -11,8 +11,22 @@
     内存使用率  <=80%
     cpu使用率 <=80%
 
-
 https://www.cnblogs.com/imyalost/p/7062784.html
+
+**命令行执行脚本**
+
+>  jmeter -n -t [jmx file] -l [results file] -e -o [Path to web report folder]
+>
+> -n ---- 非GUI模式执行JMeter
+> -t  ---- 测试计划保存的路径及文件名
+> [jmx file] ---- 测试计划保存的路径及.jmx文件名，路径可以是相对路径也可以是绝对路径
+> -l  ----  保存生成测试结果的文件
+> [results file] ---- 保存生成测试结果的文件，jtl文件格式
+> -e  ---- 测试结束后，生成测试报告
+> -o  ---- 存放生成测试报告的路径
+> [Path to web report folder] ---- 存放生成测试报告的路径，它可以是相对路径也可以是绝对路径
+
+
 
 ### 拉勾app
 **1、实时查看接口的处理能力【3】**
@@ -39,7 +53,7 @@ https://www.cnblogs.com/imyalost/p/7062784.html
         通过模拟多线程对单接口进行负载测试
     3、混合场景负载测试
         多个接口多个线程按照一定比例进行测试
-
+    
         如何控制场景比例：
         逻辑控制器--》吞吐量控制器
 
@@ -50,13 +64,13 @@ https://www.cnblogs.com/imyalost/p/7062784.html
     linux指令监控：
         1、磁盘查看：iostat 
             iostat -x
-
+    
         2、查看网络
             netstat
-
+    
         3、统计内存使用情况
             free -m
-
+    
         4、查看各个进程对资源占用状况
 
 **7、【11】分布式服务链路监控 skywalking**
